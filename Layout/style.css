@@ -1,0 +1,332 @@
+body {
+  background-color: #f8f8f9;
+  position: relative;
+  margin: 0;
+}
+
+.habilidades {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+svg {
+  display: block;
+  font: 3rem "Poppins";
+  width: 960px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+  stroke: #282828;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2) {
+  stroke: none;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+  stroke: #282828;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+  stroke: #282828;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+  stroke: #665df5;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset {
+  100% {
+    stroke-dashoffset: -35%;
+  }
+}
+
+.goog-te-combo {
+  background-color: none;
+  padding: 5px;
+}
+
+/* Estilo do texto no seletor de idiomas */
+.goog-te-combo option {
+  font-size: 0.6rem;
+  padding: 5px;
+}
+
+.menuIcon {
+  margin-top: 20px;
+  margin-left: 30px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bar {
+  width: 30px;
+  height: 5px;
+  background-color: #665df5;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100vh;
+  background-color: #54545492;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidebar a,
+ul {
+  padding: 15px;
+  text-decoration: none;
+  list-style: none;
+  font-size: 20px;
+  color: #282828;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Alinhamento à direita */
+}
+
+.inicio h1 {
+  font-size: 8rem;
+  font-family: "Poppins";
+  color: #282828;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid #d9d0bc;
+  padding-right: 8px;
+  display: inline-block; /* Garante que o cursor fique em linha com o texto */
+  animation: typing 3s steps(5, end) infinite, blinkCursor 1s infinite step-end; /* Loop infinito para digitação e cursor piscando */
+}
+
+@keyframes blinkCursor {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #3cff00; /* Cor do cursor */
+  }
+}
+
+.inicio p,
+h2 {
+  font-size: 1rem;
+  font-weight: 200;
+  margin: 0;
+  line-height: 18pt;
+  letter-spacing: 0.5px;
+  color: #282828;
+  font-family: "Nanum Gothic", sans-serif;
+  text-align: left; /* Alinhar o texto à esquerda dentro do parágrafo */
+}
+
+.curriculo a {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.curriculo a:hover {
+  background-color: #887ffc;
+  color: white;
+}
+
+.icon {
+  margin: 0 7px;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+#texto-digitacao {
+  overflow: hidden;
+  border-right: 2px solid #000; /* Adicione um cursor piscando */
+  white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+  margin: 0; /* Remove margens padrão do parágrafo */
+  padding: 10px; /* Adicione algum preenchimento para melhorar a aparência */
+  font-family: "Poppins";
+  font-weight: 800;
+  color: #282828;
+}
+.grid-container p {
+  display: flex;
+  justify-content: center; /* Centraliza no eixo horizontal */
+  align-items: center; /* Centraliza no eixo vertical */
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+.listaDeConhecimentos {
+  margin-left: 50px;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Nanum Gothic";
+  font-size: 0.8rem;
+  line-height: 18pt;
+  letter-spacing: 0.5px;
+}
+
+.listaDeConhecimentos li {
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-right: 6px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background: rgb(145, 136, 252);
+  background: linear-gradient(
+    189deg,
+    rgba(145, 136, 252, 1) 0%,
+    rgba(136, 127, 252, 1) 35%,
+    rgba(130, 120, 255, 1) 100%
+  );
+  border: 2px solid;
+  border-radius: 5px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.containerProjetos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#projeto-imagem {
+  width: 100%;
+  height: auto;
+  filter: grayscale(0); /* Inicialmente sem filtro preto e branco */
+  transition: filter 0.3s ease-in-out;
+}
+.colRight {
+  max-width: 600px; /* Defina a largura máxima desejada para a coluna */
+  text-align: left;
+  font-weight: 200;
+  margin: 0;
+  line-height: 18pt;
+  letter-spacing: 0.5px;
+  color: #282828;
+  font-family: "Nanum Gothic", sans-serif;
+  text-wrap: wrap;
+  font-size: 1rem;
+}
+
+#projeto-imagem:hover {
+  filter: grayscale(100%); /* Aplica filtro preto e branco ao passar o mouse */
+}
+
+.colCenter {
+  padding: 50px;
+}
+
+#contato h4 {
+  font-size: 4rem;
+  font-family: "Poppins";
+  font-weight: 800;
+  position: relative;
+}
+
+.containerContato {
+  font-size: 1rem;
+  color: #282828;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.containerContato {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.col-left {
+  text-align: center;
+  display: block;
+}
+
+.col-center {
+  padding: 0 20px;
+}
+
+.col-right {
+  text-align: right;
+}
+
+.ContainerFooter {
+  background-color: #282828;
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .grid-container p {
+    grid-template-columns: 1fr;
+  }
+
+  .inicio p,
+  h2 {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .icon {
+    grid-template-columns: 1fr;
+  }
+}

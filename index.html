@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Layout/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <title>Sarah Calderon</title>
+</head>
+
+<body>
+  <div class="goog-te-combo" id="google_translate_element"></div>
+  <div class="menuIcon" onclick="toggleSidebar()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="#" onclick="toggleSidebar()">Home</a></li>
+      <li><a href="#apresentacao" onclick="toggleSidebar()">Sobre</a></li>
+      <li><a href="#habilidades" onclick="toggleSidebar()">Skills</a></li>
+      <li><a href="#" onclick="toggleSidebar()">Contato</a></li>
+    </ul>
+  </div>
+  <div class="container">
+    <div class="inicio">
+      <h1 id="typed-text"></h1>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/srcalderon/" target="_blank" class="icon" id="linkedin-icon">
+          <img src="Assets/icon/linkedin.svg" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/sarahrcalderon" target="_blank" class="icon" id="github-icon">
+          <img src="Assets/icon/github.svg" alt="GitHub">
+        </a>
+        <a href="https://medium.com/@sarahrcalderonn" target="_blank" class="icon" id="medium-icon">
+          <img src="Assets/icon/medium.svg" alt="Medium">
+        </a>
+      </div>
+      <br>
+      <p class="apresentacao" id="apresentacao">Meu nome é Sarah, sou estudante de Engenharia de Software, gosto muito de arte, escutar música, de ciência e uma pessoa muito curiosa sobre como podemos fazer um futuro para todos e não para alguns.
+      </p>
+    </div>
+    <br>
+    <p class="curriculo"><a href="Assets/curriculo/sarahr_curriculo.pdf" download>Clique aqui para baixar meu curriculo</a></p>
+
+    <section>
+      <h2>Possuo habilidades sólidas em lógica de programação, facilitando minha compreensão em demais linguagens, busco criar soluções inovadoras que transcendam desafios. Adoto metodologias ágeis para tornar o processo de trabalho mais iterativo e adaptativo. Minha colaboração é orientada pela busca constante de eficiência e evolução.Acredito na importância da experiência do usuário (UX) como uma conexão intuitiva e emocional. Minha abordagem visa criar interfaces que não apenas funcionem, mas também deixem uma impressão duradoura nos usuários. Tenho experiência sólida em fornecer suporte remoto, resolvendo desafios à distância.</h2>
+    </section>
+  </div>
+  <div class="grid-container">
+    <div class="habilidades" id="habilidades">
+      <svg viewBox="0 0 960 300">
+        <symbol id="s-text">
+          <text text-anchor="middle" x="50%" y="80%">habilidades</text>
+        </symbol>
+        <g class="g-ants">
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+        </g>
+      </svg>
+    </div>
+    <ul class="listaDeConhecimentos">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Javascript</li>
+      <li>React</li>
+      <li>Protótipo</li>
+      <li>Python</li>
+      <li>Django</li>
+      <li>Design de Interface (UI)</li>
+      <li>Automação front-end com NPM</li>
+      <li>Experiência de usuário (UX)</li>
+      <li>Análise e visualização de Dados</li>
+      <li>Exportações de Dados e Processar os Dados</li>
+      <li>PostgreSQL</li>
+      <li>Big Data</li>
+      <li>Suporte Técnico Remoto</li>
+      <li>Help Desk</li>
+      <li>Manutenção de Hardware</li>
+    </ul>
+  </div>
+  <br>
+
+  <div class="containerProjetos">
+    <div class="colCenter">
+      <a href="https://www.behance.net/gallery/162017075/BotaniK-UX-UI-Design">
+        <img src="Assets/img/prototipo.png" alt="Protótipo" id="projeto-imagem">
+      </a>
+    </div>
+    <div class="colRight">
+      <p>Projeto focado em experiência de usuário (UX e UI)</p>
+      <p>A estratégia aplicada foi cuidadosamente pensada, incorporando uma série de etapas metodológicas para assegurar resultados eficazes. O processo começou com uma análise nas necessidades do usuário, buscando compreender suas expectativas e comportamentos. A partir desse ponto, foram conduzidos estudos de caso aprofundados, analisando cenários similares e identificando oportunidades de melhoria. Uma auditoria competitiva foi realizada para avaliar as práticas adotadas por outras empresas do mercado, proporcionando insights valiosos sobre as tendências e padrões do setor. O estudo de usabilidade desempenhou um papel crucial, envolvendo testes práticos com usuários reais para identificar pontos de fricção e áreas de aprimoramento na interface do produto.
+      </p>
+      <p class="curriculo"><a href="https://www.behance.net/portfolio/editor?project_id=162017075">Saiba Mais</a></p>
+    </div>
+  </div>
+
+  <div class="containerProjetos">
+    <div class="colCenter">
+      <a href="https://github.com/sarahrcalderon/pythonNotasFiscais/blob/main/index.py">
+        <img src="Assets/img/uidesing.png" alt="Github" id="projeto-imagem">
+      </a>
+    </div>
+    <div class="colRight">
+      <p>Acesse meu Repósitorio para visualizar mais projetos</p>
+      <p>E veja códigos em Python, JavaScript entre outras linguagens! Aqui, você encontrará aplicações que abrangem desde a manipulação de dados até a geração de arquivos XML e a criação de tabelas dinâmicas. Sinta-se à vontade para navegar pelos códigos-fonte, contribuir com sugestões.
+      </p>
+      <p class="curriculo"><a href="https://github.com/sarahrcalderon/pythonNotasFiscais/blob/main/index.py">Saiba Mais</a></p>
+    </div>
+  </div>
+  <div class="containerContato">
+    <div class="col-center">
+      <h4 id="contato">Contato</h4>
+      <p>Ah! algumas curiosidade se você quiser sobre mim. Eu adoro ter uma boa conversa, descontraída mas inteligente, pensar sobre os motivos da vida, e porque diabos alguém escolheu o nome de copo para ser um "copo".💭</p><br> Se você quiser tomar um café e conversar pode me chamar por aqui <strong>srcalderonn@gmail.com</strong> ☕️ 💅
+      <br><br>
+    </div>
+  </div>
+  </div>
+  <footer class="ContainerFooter">
+    <a href="#" class="scroll-icon">
+      <img src="Assets/icon/upseta.svg" alt="Ícone de Seta para Cima" class="scroll-icon">
+      <br>
+      </div>
+
+  </footer>
+  <script src="Layout/script.js"></script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+</body>
+
+</html>
