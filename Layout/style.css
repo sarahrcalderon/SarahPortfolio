@@ -1,7 +1,8 @@
 body {
   background-color: #f8f8f9;
-  position: relative;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .habilidades {
@@ -12,7 +13,7 @@ body {
 
 svg {
   display: block;
-  font: 3rem "Poppins";
+  font: 8rem "Poppins";
   width: 960px;
   height: 300px;
   margin: 0 auto;
@@ -126,7 +127,7 @@ ul {
 }
 
 .inicio h1 {
-  font-size: 8rem;
+  font-size: 6rem;
   font-family: "Poppins";
   color: #282828;
   margin-bottom: 10px;
