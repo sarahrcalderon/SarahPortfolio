@@ -267,12 +267,15 @@ h2 {
 
 
 .containerProjetos {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
 }
 
 #projeto-imagem {
   width: 100%;
+  justify-self: center; 
+  align-self: center;
   height: auto;
   filter: grayscale(0);
   /* Inicialmente sem filtro preto e branco */
@@ -280,7 +283,7 @@ h2 {
 }
 
 .colRight {
-  max-width: 600px;
+  max-width: 500px;
   text-align: left;
   font-weight: 200;
   margin: 0;
