@@ -1,0 +1,11 @@
+
+.goog-te-combo {
+    background-color: none;
+    padding: 5px;
+  }
+  
+  /* Estilo do texto no seletor de idiomas */
+  .goog-te-combo option {
+    font-size: 0.6rem;
+    padding: 5px;
+  }

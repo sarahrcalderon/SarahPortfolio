@@ -1,0 +1,36 @@
+.inicio h1 {
+    font-size: 6rem;
+  
+    color: #282828;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid #d9d0bc;
+    padding-right: 8px;
+    display: inline-block;
+    /* Garante que o cursor fique em linha com o texto */
+    animation: typing 3s steps(5, end) infinite, blinkCursor 1s infinite step-end;
+    /* Loop infinito para digitação e cursor piscando */
+  }
+  
+  @keyframes blinkCursor {
+  
+    from,
+    to {
+      border-color: transparent;
+    }
+  
+    50% {
+      border-color: #3cff00;
+      /* Cor do cursor */
+    }
+  }
+
+  #texto-digitacao {
+    overflow: hidden;
+    border-right: 2px solid #000;
+    white-space: nowrap;
+    margin: 0;
+    padding: 10px;
+    
+  }

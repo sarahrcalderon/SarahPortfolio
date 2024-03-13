@@ -1,0 +1,42 @@
+#contato h4 {
+    font-size: 4rem;
+    font-family: "Poppins";
+    font-weight: 800;
+    position: relative;
+  }
+  
+  .containerContato {
+    font-size: 1rem;
+    color: #282828;
+    font-family: "Nanum Gothic", sans-serif;
+  }
+  
+  .containerContato {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .col-left {
+    text-align: center;
+    display: block;
+  }
+  
+  .col-center {
+    padding: 0 20px;
+  }
+  
+  .col-right {
+    text-align: right;
+  }
+  
+  .ContainerFooter {
+    background-color: #28282800;
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+  }

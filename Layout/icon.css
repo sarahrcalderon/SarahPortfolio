@@ -1,0 +1,21 @@
+.icon{
+    text-decoration: none;
+  }
+  .menuIcon {
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .icon {
+    margin: 0 7px;
+    transition: transform 0.3s, filter 0.3s;
+  }
+  
+  .icon:hover {
+    transform: scale(1.2);
+  }

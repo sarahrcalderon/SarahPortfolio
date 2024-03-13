@@ -1,3 +1,4 @@
+//TRADUTOR
 function googleTranslateElementInit() {
   new google.translate.TranslateElement(
     {
@@ -9,26 +10,14 @@ function googleTranslateElementInit() {
   );
 }
 
+//DARK MODE THEME
+const checkbox = document.getElementById("checkbox")
+checkbox.addEventListener("change", () => {
+  document.body.classList.toggle("dark")
+})
 
 
-function toggleSidebar() {
-  var sidebar = document.getElementById("sidebar");
-  if (sidebar.style.left === "0px") {
-    sidebar.style.left = "80px";
-  } else {
-    sidebar.style.left = "0px";
-    sidebar.style.backgroundColor = "#887ffc"
-    
-  }
-}
 
-// Fechar a barra lateral se clicar fora dela
-window.onclick = function (event) {
-  var sidebar = document.getElementById("sidebar");
-  if (event.target != sidebar && !event.target.closest(".menuIcon")) {
-    sidebar.style.left = "-250px";
-  }
-};
 
 // Texto a ser digitado
 const textToType = "HELLO!";
