@@ -58,7 +58,11 @@ body {
 
 
 .containerProjetos {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  margin-left: 250px;
+  justify-self: center; 
+  align-self: center;
   justify-content: center; 
   align-items: center; 
 }
@@ -69,7 +73,6 @@ body {
   align-self: center;
   height: auto;
   filter: grayscale(0);
-  /* Inicialmente sem filtro preto e branco */
   transition: filter 0.3s ease-in-out;
 }
 
@@ -106,15 +109,16 @@ body {
     display: none;
   }
 
-  .grid-container p {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
+.containerProjetos  {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 0;
+}
 
-  .containerProjetos {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
+#projeto-imagem{
+  display: grid;
+  grid-template-columns: 1fr;
+}
 
   .colRight {
     margin-left: 30px;
@@ -128,6 +132,10 @@ body {
 
   .containerSkill, .habilidadeTitulo {
     display: grid;
+    grid-template-columns: 1fr;
+  }
+  .listaDeConhecimentos{
+    display:grid;
     grid-template-columns: 1fr;
   }
 
