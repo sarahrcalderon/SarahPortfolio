@@ -47,3 +47,23 @@ function typeWriter() {
   type();
 };
 
+//BTN
+const btnSaibaMaisGit = document.getElementById('btnSaibaMaisGit');
+btnSaibaMaisGit.addEventListener('click', function() {
+    window.location.href = 'https://github.com/sarahrcalderon/pythonNotasFiscais/blob/main/index.py';
+});
+
+
+const btnSaibaMais = document.getElementById('btnSaibaMais');
+btnSaibaMais.addEventListener('click', function() {
+    window.location.href = 'https://www.behance.net/gallery/162017075/BotaniK-UX-UI-Design';
+  });
+
+document.getElementById('btnDownloadCurriculo').addEventListener('click', function() {
+  const link = document.createElement('a');
+  link.href = 'Assets/curriculo/sarahr_curriculo.pdf';
+  link.setAttribute('download', 'sarahr_curriculo.pdf');
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  });
